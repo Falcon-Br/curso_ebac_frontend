@@ -1,143 +1,80 @@
-/* Reset CSS */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ----- Cabeçalho ----- */
-
-body > header {
-    background-color: #2f3640;
-    padding: 16px 0;
-    color: #f5f6fa;
+body, 
+button {
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
     width: 1366px;
     margin: 0 auto;
-}
-
-header .container{
-    display: flex;    
-    align-items: center;
-    justify-content: space-between;
-}
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-header li a {
-    color: #f5f6fa;
-    margin-left: 16px;
-    text-decoration: none;
-}
-
-header li a:hover {
-    text-decoration: underline;
-}
-
-/* ----- Main ----- */
-
-.articles {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.articles article {
-    text-align: center;
+h1 {
+    margin-top: 150px;
+    font-size: 30px;
 }
 
-#noticias-principais .articles article img {
-    height: 155px;
+p {
+    margin: 15px;
 }
 
-.articles article {
-    width: 30%;
+form input {
+    display: block;
+    margin: 0 auto;
 }
 
-section {
-    padding: 16px 0;
+form input,
+form button,
+.mensagem-sucesso,
+.mensagem-error,
+.mensagem-aviso{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
-section h2, 
-.articles article {
-    margin: 16px 0;
+form button {
+    background-color: #2FCC71;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-.articles article h3 {
-    margin: 8px 0;
+form button:hover {
+    background-color: #35e96b;
+    cursor: pointer;
 }
 
-.articles article a {
-    background-color: blue;
-    color: #fff;
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;
+.mensagem-sucesso,
+.mensagem-error,
+.mensagem-aviso {
+    font-size: 18px;
+    margin: 10px auto;
+    display: none;
 }
 
-.articles article a:hover {
-    text-decoration: underline;
+.mensagem-sucesso {
+    background-color: #35e96b;
+    border: 1px solid #35e96b;
 }
 
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
+.mensagem-error {
+    background-color: #E91717;
+    border: 1px solid #E91717;
 }
 
-.articles article h3 {
-    font-size: 24px;
-}
-
-section h2 {
-    font-size: 32px;
-}
-
-#noticias-principais {
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-#noticias-principais .articles article a {
-    background-color: #009432;
-}
-
-#analises {
-    background-color: rgba(238, 63, 50, 0.1);
-}
-
-#analises .articles article a {
-    background-color: #e41912;
-}
-
-#dicas {
-    background-color: rgba(194, 221, 95, 0.1);
-}
-
-#dicas .articles article a {
-    background-color: #e4c412;
-}
-
-#eventos {
-    background-color: rgba(95, 145, 221, 0.1);
-}
-
-#eventos .articles article a {
-    background-color: #12cbe4;
-}
-
-/* ----- footer ----- */
-
-footer p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #2f3640;
-    padding: 16px 0;
-    color: #f5f6fa;
+.mensagem-aviso {
+    background-color: #f7fc00;
+    border: 1px solid #f7fc00;
 }

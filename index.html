@@ -7,244 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Gamer</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <section class="container">
+        <form id="form-compara">
+            <h1>EBAC HTML e JavaScript</h1>
+            <p>Informe os valores para verificar se o Campo B é maior que o Campo A</p>
+            <input type="number" id="campo-a" placeholder="Campo A">
+            <input type="number" id="campo-b" placeholder="Campo B">
+            <button id="btn-verificar" type="submit">Verificar</button>
+            <p class="reso"></p>
+        </form>
+    </section>
+
+    <section class="container">
+        <p class="mensagem-sucesso"></p>
+    </section>
+
+    <section class="container">
+        <p class="mensagem-error"></p>
+    </section>
+    
+    <section class="container">
+        <p class="mensagem-aviso"></p>
+    </section>
         
-        <div class="container">
-      
-            <h1>Portal Gamer</h1>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#noticias-principais" title="Ir para a seção de esportes">Notícias Principais</a>
-                    </li>
-                    <li>
-                        <a href="#analises" title="Ir para a seção de esportes">Análises</a>
-                    </li>
-                    <li>
-                        <a href="#dicas" title="Ir para a seção de esportes">Dicas</a>
-                    </li>
-                    <li>
-                        <a href="#eventos" title="Ir para a seção de notícias">Eventos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-    <section id="noticias-principais">
-
-        <div class="container">
-            <h2>Notícias Principais</h2>
-
-            <div class="articles">
-                <article>
-                    <img src="./img/controle-xbox-one.jpg" alt="Imagem de um controle de Xbox One" />
-                    <header>
-                        <time>30/01/2024 às 12:35</time>
-                    </header>
-                    <h3>Por que tantas empresas de games estão demitindo os seus funcionários? Entenda a situação</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam
-                        tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-    
-                <article>
-                    <img src="./img/controle-ps5.jpg" alt="Imagem de um controle de PlayStation 5" />
-                    <header>
-                        <time>30/01/2024 às 12:35</time>
-                    </header>
-                    <h3>Nova Atualização do PS5 é lançada esse mês</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam
-                        tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-    
-                <article>
-                    <img src="./img/epic-games.jpg" title="Logo da Empresa Epic Games" />
-                    <header>
-                        <time>30/01/2024 às 12:35</time>
-                    </header>
-                    <h3>Epic Games Store revela próximo jogo grátis do mês! Conheça o título.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam
-                        tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-          
-
-        </div>
-
-    </section>
-
-    <section id="analises">
-
-        <div class="container">
-            <h2>Análises</h2>
-
-           <div class="articles">
-            <article>
-                <img src="./img/spider-man.jpg" alt="Muitos dólares" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Spider man 2</h3>
-                <p> Nota: 90
-                </p>
-                <a href="#" title="Leia a análise completa">Ler Análise</a>
-            </article>
-
-            <article>
-                <img src="./img/mortal-kombat-1.jpg" alt="Várias notas de euro" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Mortal Kombat 1</h3>
-                <p>Nota: 70</p>
-                <a href="#" title="Leia a análise completa">Ler Análise</a>
-            </article>
-
-            <article>
-                <img src="./img/zelda.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Alta no preço do barril do petróleo</h3>
-                <p>Nota: 100</p>
-                <a href="#" title="Leia a análise completa">Ler Análise</a>
-            </article>
-           </div>
-
-        </div>
-
-    </section>
-
-    <section id="dicas">
-        
-        <div class="container">
-            <h2>Dicas</h2>
-
-           <div class="articles">
-
-            <article>
-                <img src="./img/baldurs.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Melhores Armaduras e escolhas para fazer no começo de Baldur's Gate 3</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-    
-            <article>
-                <img src="./img/equipamentos.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Alta nos preços de produtos eletrônicos em 10% no Brasil</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-    
-            <article>
-                <img src="./img/steam.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Promoção do mês, confira os jogos selecionados para esse mês na Steam</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-
-           </div>
-
-        </div>
-
-    </section>
-
-    <section id="eventos">
-       
-        <div class="container">
-            <h2>Eventos</h2>
-
-           <div class="articles">
-            <article>
-                <img src="./img/lol.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Competição de League of Legends ocorrerá esse mês</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-    
-            <article>
-                <img src="./img/state-of-play.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>State of Play promete revelar novos jogos incríveis</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-    
-            <article>
-                <img src="./img/gamer.jpg" alt="Extração de petróleo" />
-                <header>
-                    <time>30/01/2024 às 12:35</time>
-                </header>
-                <h3>Pesquisa informa que Brasileiros preferem jogar jogos de estratégia</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
-                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
-                    Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-
-           </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-        <p>Desenvolvido por: Ádrio Falcão</p>
-    </footer>
-
+    <script src="/main.js"></script>
 </body>
+
 </html>
