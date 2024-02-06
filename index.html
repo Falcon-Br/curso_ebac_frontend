@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Gamer</title>
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,28 +16,19 @@
 <body>
 
     <section class="container">
-        <form id="form-compara">
-            <h1>EBAC HTML e JavaScript</h1>
-            <p>Informe os valores para verificar se o Campo B é maior que o Campo A</p>
-            <input type="number" id="campo-a" placeholder="Campo A">
-            <input type="number" id="campo-b" placeholder="Campo B">
-            <button id="btn-verificar" type="submit">Verificar</button>
-            <p class="reso"></p>
+        <form >
+            <h1>Lista de Tarefas</h1>
+            <input type="text" id="tarefa" placeholder="Nome da Tarefa">
+            <button id="btn-cadastrar" type="submit">Cadastrar Tarefa</button>
         </form>
     </section>
 
     <section class="container">
-        <p class="mensagem-sucesso"></p>
+        <ul id="task-list">
+        </ul>
     </section>
 
-    <section class="container">
-        <p class="mensagem-error"></p>
-    </section>
-    
-    <section class="container">
-        <p class="mensagem-aviso"></p>
-    </section>
-        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/main.js"></script>
 </body>
 

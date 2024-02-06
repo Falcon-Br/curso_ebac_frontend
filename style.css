@@ -20,12 +20,8 @@ button {
 }
 
 h1 {
-    margin-top: 150px;
+    margin: 50px;
     font-size: 30px;
-}
-
-p {
-    margin: 15px;
 }
 
 form input {
@@ -34,10 +30,7 @@ form input {
 }
 
 form input,
-form button,
-.mensagem-sucesso,
-.mensagem-error,
-.mensagem-aviso{
+form button{
     width: 250px;
     padding: 10px;
     margin-bottom: 10px;
@@ -56,25 +49,12 @@ form button:hover {
     cursor: pointer;
 }
 
-.mensagem-sucesso,
-.mensagem-error,
-.mensagem-aviso {
-    font-size: 18px;
-    margin: 10px auto;
-    display: none;
+.checked {
+    text-decoration: line-through;
+    color: #888;
 }
 
-.mensagem-sucesso {
-    background-color: #35e96b;
-    border: 1px solid #35e96b;
-}
-
-.mensagem-error {
-    background-color: #E91717;
-    border: 1px solid #E91717;
-}
-
-.mensagem-aviso {
-    background-color: #f7fc00;
-    border: 1px solid #f7fc00;
+#task-list {
+    list-style-type: none;
+    cursor: pointer;
 }
