@@ -13,27 +13,25 @@ button {
 .container{
     width: 1366px;
     margin: 0 auto;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
+    text-align: center;
     margin: 50px;
     font-size: 30px;
 }
 
 form input {
     display: block;
-    margin: 0 auto;
 }
 
 form input,
 form button{
-    width: 250px;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 3px;
 }
@@ -42,19 +40,25 @@ form button {
     background-color: #2FCC71;
     font-size: 18px;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 form button:hover {
     background-color: #35e96b;
-    cursor: pointer;
 }
 
-.checked {
-    text-decoration: line-through;
-    color: #888;
+.container form label {
+    justify-content: flex-start;
+
 }
 
-#task-list {
-    list-style-type: none;
-    cursor: pointer;
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
 }
