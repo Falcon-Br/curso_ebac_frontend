@@ -1,8 +1,18 @@
-@use 'reset';
-@use 'variaveis';
+@import "variaveis.less";
+@import "mapas.less";
+
+@breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
+@breakpointMobile: ~"(max-width: 767px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
 
 body {
-    background-color: variaveis.$corBranca;
+    background-color: @corBranca;
 }
 
 li {
@@ -16,7 +26,7 @@ li {
 }
 
 header {
-    background-color: variaveis.$corAzul;
+    background-color: @corAzul;
     position: sticky;
     top: 0;
     left: 0;
@@ -29,6 +39,7 @@ header {
     }
 }
 
+
 .menu {
     display: flex;
 
@@ -37,8 +48,8 @@ header {
         margin-left: 24px;
 
         a {
-            color: #fff;
-            text-decoration: none; 
+            color: @corBranca;
+            text-decoration: none;
         }
     }
 }
@@ -63,20 +74,20 @@ section {
 
 .product-button {
     display: block;
-    background-color: variaveis.$corVerde;
-    color: #fff;
+    background-color: #colors[backgroundColor];
+    color: #colors[buttonColor];
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
     margin-top: 8px;
     text-decoration: none;
 
-    &:hover{
-        background-color: lighten(variaveis.$corVerde, 15%);
+    &hover {
+        background-color: #colors[backgroundColor];
     }
 }
 
-@media screen and (max-width: variaveis.$tablet) {
+@media @breakpointTablet {
     .container {
         max-width: 80%;
     }
@@ -87,7 +98,7 @@ section {
     }
 }
 
-@media screen and (max-width:  variaveis.$mobile) {
+@media @breakpointMobile {
     .products {
         display: block;
     }

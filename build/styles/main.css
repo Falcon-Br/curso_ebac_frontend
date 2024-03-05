@@ -4,21 +4,17 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
-
 body {
   background-color: #f5f6fa;
 }
-
 li {
   list-style: none;
 }
-
 .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
-
 header {
   background-color: #182C61;
   position: sticky;
@@ -31,7 +27,6 @@ header .container {
   align-items: center;
   padding: 16px 0;
 }
-
 .menu {
   display: flex;
 }
@@ -40,14 +35,12 @@ header .container {
   margin-left: 24px;
 }
 .menu li a {
-  color: #fff;
+  color: #f5f6fa;
   text-decoration: none;
 }
-
 section {
   padding: 56px 0;
 }
-
 .products {
   margin-top: 40px;
   display: grid;
@@ -56,27 +49,24 @@ section {
   row-gap: 4%;
   width: 100%;
 }
-
 .product-item img {
   width: 100%;
   border-radius: 16px;
 }
-
 .product-button {
   display: block;
   background-color: #44bd32;
-  color: #fff;
+  color: #0097e6;
   text-align: center;
   padding: 8px 0;
   border-radius: 8px;
   margin-top: 8px;
   text-decoration: none;
 }
-.product-button:hover {
-  background-color: #74d665;
+.product-buttonhover {
+  background-color: #44bd32;
 }
-
-@media screen and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
@@ -85,7 +75,7 @@ section {
     column-gap: 3%;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .products {
     display: block;
   }
@@ -93,4 +83,3 @@ section {
     margin-bottom: 32px;
   }
 }
-/*# sourceMappingURL=maps/main.css.map */

@@ -1,1 +1,0 @@
-function multiplica(){return console.log(10)}
