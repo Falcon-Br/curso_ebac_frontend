@@ -1,109 +1,28 @@
-@import "variaveis.less";
-@import "mapas.less";
-
-@breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
-@breakpointMobile: ~"(max-width: 767px)";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-}
+// styles.less
+@primary-color: #007bff;
 
 body {
-    background-color: @corBranca;
+    font-family: Arial, sans-serif;
 }
 
-li {
-    list-style: none;
+h1 {
+    color: @primary-color;
 }
 
 .container {
-    max-width: 1024px;
-    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-header {
-    background-color: @corAzul;
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-    }
+.button {
+    background-color: @primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-
-.menu {
-    display: flex;
-
-    li {
-        font-weight: bold;
-        margin-left: 24px;
-
-        a {
-            color: @corBranca;
-            text-decoration: none;
-        }
-    }
-}
-
-section {
-    padding: 56px 0;
-}
-
-.products {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 32.66%);
-    column-gap: 1%;
-    row-gap: 4%;
-    width: 100%;
-}
-
-.product-item img {
-    width: 100%;
-    border-radius: 16px;
-}
-
-.product-button {
-    display: block;
-    background-color: #colors[backgroundColor];
-    color: #colors[buttonColor];
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin-top: 8px;
-    text-decoration: none;
-
-    &hover {
-        background-color: #colors[backgroundColor];
-    }
-}
-
-@media @breakpointTablet {
-    .container {
-        max-width: 80%;
-    }
-
-    .products {
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
-    }
-}
-
-@media @breakpointMobile {
-    .products {
-        display: block;
-    }
-
-    .product-item  {
-        margin-bottom: 32px;
-    }
+.button:hover {
+    background-color: darken(@primary-color, 10%);
 }
